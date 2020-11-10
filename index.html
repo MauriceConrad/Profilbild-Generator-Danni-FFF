@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.0.6/compressor.min.js" charset="utf-8"></script>
+    <script src="js/download.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Profilbild Generator #Danni</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="btns">
+        <button class="btn" @click="upload">Bild hochladen</button>
+      </div>
+      <div class="profile-picture-result">
+        <div class="image" :class="{ loading }">
+          <img :src="image" alt="">
+          <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <button v-if="blob" class="btn" @click="downloadImage" style="background-color: #65A36D;">Profilbild sichern</button>
+      </div>
+    </div>
+    <script src="lib/app.js" charset="utf-8"></script>
+  </body>
+</html>

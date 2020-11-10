@@ -1,0 +1,19 @@
+{
+  "name": "profilbild-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel js/app.js -d lib"
+  },
+  "author": "Maurice Conrad",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-regenerator": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-plugin-transform-runtime": "^6.23.0"
+  }
+}
